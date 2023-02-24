@@ -9,11 +9,27 @@
 // .then(json => console.log(json))
 
 function loadData(){
-    const url= 'https://jsonplaceholder.typicode.com/todos/1';
+    const url= 'https://jsonplaceholder.typicode.com/posts/1/comments';
     fetch(url)
    .then(response => response.json())
-   .then(json => console.log(json))
+   .then(data => displayData(data))
 }
+
+function displayData(comments){
+    const container = document.getElementById('display-container'); 
+    for (const comment of comments){
+    const div = document.createElement('div');
+    div.innerHTML = `
+    <h3>name: ${comment.name}</h3>
+    <p>email: ${comment.email}</p>
+    
+
+
+`;
+container.appendChild(div);
+}
+}
+
 
 // Video 33-4 Load more data, more APIs, send data to function
 
@@ -41,18 +57,20 @@ function loadPosts2(){
     .then(data => displayPosts2(data))
 }
 
-function displayPosts2(data){
+function displayPosts2(users){
     const ul = document.getElementById('posts-list');
-    ul.classList.add('post')
+   
     // console.log(data);
-    for(const user of data){
-        console.log(user.title);
+    for(const user of users){
+        
+        li.classList.add('post')
         const li = document.createElement('li');
+        console.log(users.title);
         li.innerText = user.name;
         ul.appendChild(li);
     }
 }
-loadPosts2();
+// loadPosts2();
 
 // Video 33-6 Load posts and display on the website with CSS
 
