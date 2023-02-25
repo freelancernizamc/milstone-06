@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milstone-6: Module-34</title>
+    <style>
+      #all-countries{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      .country{
+        border: 2px solid tomato;
+        padding: 10px;
+      }
+    </style>
+    <link rel="shortcut icon" href="images/fav2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black container-fluid">
+            <div class="d-flex navbar-brand bg-primary text-warning rounded-pill bg-dark">
+                <img class="img-fluid" src="images/nizam.png" width="60" height="24">
+                <h4>Milstone-6<br>Module-34</h4>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold ">
+                <li class="nav-item"><a class="nav-link text-white hover:text-warning" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod31.html">Module-31</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod32.html">Module-32</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod33.html">Module-33</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod35.html">Module-35</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod36.html">Module-36</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod37.html">Module-37</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Milstone
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Milstone-01</a></li>
+                      <li><a class="dropdown-item" href="#">Milstone-02</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-03</a></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-04</a></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-05</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <button class="btn bg-warning text-dark me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Modal</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Assalamualaikum!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 This page made by Bootstrap.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <div class="d-flex justify-content-around align-items-center bg-dark text-white">
+            <div>
+                <h1>Assalamualaikum!</h1>
+                <h1 class="display-1 fw-bold text-warning">I am Nizam</h1>
+                <h4>Student of Batch-7</h4>
+            </div>
+            <div>
+                <img class="rounded-circle" src="images/nizam.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <marquee class="fs-1 fw-bold bg-primary text-white">Assalamualaikum! Welcome to Milstone-06, Module-34 Practice Section, I am Nizam, Student of Batch 07.</marquee>
+    <section>
+        <h1 class="fs-3 text-danger text-center">Video 34-1 Basic API recap with kanye west</h1>
+       
+        <div class="text-center">
+            <a href="https://kanye.rest/">KANYE.REST</a>
+            <h1>Kanye Famous Quotes</h1>
+            <blockquote id="quote">
+
+            </blockquote>
+            <button onclick="loadQuote()" class="btn btn-success">Refresh Quote</button>
+        </div>
+        <h1 class="fs-3 text-info text-center">Video 34-2 Handle Random user with nested API data</h1>
+    </section>
+    <section>
+      <h1>Looking for Bideshini</h1>
+      <div>
+        <h2>Name: <span id="name"></span></h2>
+        <h3>Gender: <span id="gender"></span></h3>
+        <h3>Location: <span id="location"></span></h3>
+      </div>
+    </section>
+    <section class="container">
+      <h1 class="fs-3 text-info text-center"> Video 34-3 International travel, display country name, capital</h1>
+      <h1 class="fs-3 text-info text-center"> Video 34-4 (advanced) Call dynamic API, load dynamic data to display</h1>
+      <h1 class="fs-3 text-danger text-center">All Countries</h1>
+      <div>
+      <div id="country-details">
+
+      </div>
+    </div>
+      <div id ="all-countries">
+
+      </div>
+    </section><br>
+    <h1 class="fs-3 text-success text-center"> Video 34-6 Display dynamic search result using bootstrap cards</h1>
+    <h1 class="fs-3 text-success text-center"> Video 34-7 (advanced) Create dynamic url based on click and display modal</h1>
+    <h1 class="fs-3 text-success text-center"> Video 34-8 handle fetch error, use try catch and async await</h1>
+    <h1 class="fs-3 text-success text-center"> Video 34-9 Module Summary and home work</h1>
+    <h1 class="fs-2 text-center"> The Meals</h1>
+    <!-- Search container -->
+    <div style="height:120px" class="d-flex justify-content-center align-items-center">
+      <div>
+        <input id="search-field" type="text" class="px-2" placeholder="search">
+        <button onclick="searchMeals()" class="btn btn-primary">search</button>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div id="meals-container" class="row row-cols-1 row-cols-md-3 g-4">
+      
+            
+        </div>
+      </div>
+     <!-- Modal -->
+    <div class="modal fade" id="mealsDetails" tabindex="-1" aria-labelledby="mealsDetails" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="mealsDetailsLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="mealDetailsBody" class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </section><br><br>
+    <section class="container">
+      <h1 class="text-center fs-1 text-warning bg-black">QUIZ</h1>
+      <h2 class="fs-4 text-primary">Q1: const bondCode=` I am Fake James bond . My new code is: 00${7+1+2}`<br>
+        If Fake James gives you the bondCode variable and tells you to find the code in javascript , what will you get?<br>
+      Ans: 0010</h2>
+      <h2 class="fs-4 text-warning">Q2: const data={ result: [ {userName: {title:'Mr.',name:"sakib khan"} } ] }
+        How would you access "sakib khan" ?<br>
+      Ans: data.result[0].Name.name</h2>
+      <h2 class="fs-4 text-danger">Q3: Which array method will you use to obtain an array containing the cubes of array p? const p=[1,2,3]; const q=p.__?__( n=> Math.pow(n, 3));<br>
+      Ans: map</h2>
+      <h2 class="fs-4 text-danger">Q4: How will you make the url dynamic using the food variable?<br>
+
+const url = `https://www.themealdb.com/api/json/v1/1/search.php?s={food}`<br>
+      Ans: Use${food} instead of {food}</h2>
+      <h2 class="fs-4 text-danger">Q5: How to set image src dynamically? <br>
+
+
+
+        const path = "https://www.images.com/cat.jpg"; <br>
+        
+        const div= document.createElement('div');<br>
+        div.innerHTML = `<img src=__?__ alt = "">`;<br>
+        <br>
+      Ans: ${path}</h2>
+      <h2 class="fs-4 text-danger">Q6: What is textContent in javascript? ( google it and read the wikipedia page)
+        <br>
+      Ans: All the text contents of a node and all its decendants</h2>
+      <h2 class="fs-4 text-danger">Q7: Which one is not a data type in JSON? ( google it )
+        <br>
+      Ans: undefined</h2>
+      <h2 class="fs-4 text-danger">Q8: How will you dynamically pass the name variable as a parameter to the loadDetail function?
+        <br>
+      Ans: "`/div onclick="loadDetais(${name})">Biriyani /div`"</h2>
+      <h2 class="fs-4 text-danger">Q9: How will you handle the error? 
+
+        fetch(url)
+         .then(res=>res.json())
+         .then(data => console.log(data)
+         .__?__(error => console.log(error))
+        <br>
+      Ans: catch</h2>
+      <h2 class="fs-4 text-danger">Q10:Which one is a proper output? 
+
+        const array = { hobbies: ["dancing", "singing", "acting"] };
+        console.log(JSON.stringify(array));
+        <br>
+      Ans: {"hobbies":[dancing",singing",acting"]}</h2>
+    </section>
+    <h1 class="text-center bg-warning text-success">THE END</h1>
+    </main>
+    <script src="js/mod34.js"></script>
+    <script src="js/country.js"></script>
+    <script src="js/meal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
