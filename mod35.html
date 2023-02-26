@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone 06: Module 31</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black container-fluid">
+            <div class="d-flex navbar-brand bg-primary text-warning rounded-pill bg-dark">
+                <img class="img-fluid" src="images/nizam.png" width="60" height="24">
+                <h4>Milstone-06<br>Module-35</h4>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold ">
+                <li class="nav-item"><a class="nav-link text-white hover:text-warning" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod31.html">Module-31</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod32.html">Module-32</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod33.html">Module-33</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod34.html">Module-34</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod36.html">Module-36</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod37.html">Module-37</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Milstone
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Milstone-01</a></li>
+                      <li><a class="dropdown-item" href="#">Milstone-02</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-03</a></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-04</a></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-05</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <button class="btn bg-warning text-dark me-5" data-bs-toggle="modal" data-bs-target="#phoneDetailsModal3" type="submit">Modal</button>
+            <!-- Modal -->
+            <div class="modal fade" id="phoneDetailsModal3" tabindex="-1" aria-labelledby="phoneDetailsModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="phoneDetailsModalLabel3">Assalamualaikum!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 This page made by Bootstrap.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Change</button>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <div class="d-flex justify-content-around align-items-center bg-dark text-white">
+            <div>
+                <h1>Assalamualaikum!</h1>
+                <h1 class="display-1 fw-bold text-warning">I am Nizam</h1>
+                <h4>Student of Batch-7</h4>
+            </div>
+            <div>
+                <img class="rounded-circle" src="images/nizam.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="display-1 fw-bold text-center bg-black text-warning">Module-35 Practice</h1>
+        </div>
+        <section>
+            <h2 class="fs-3 text-center text-primary">Video 35-1 Load data using Phone Hunter API</h2>
+            <h2 class="fs-3 text-center text-danger">Video 35-2 Display phones and implement search functionality</h2>
+            <h2 class="fs-3 text-center text-success">Video 35-3 Toggle no phone found message based on search result</h2>
+            <h2 class="fs-3 text-center text-danger">Video 35-4 Show and hide loading spinner while loading API data</h2>
+            <h2 class="fs-3 text-center text-primary">Video 35-5 Implement Show All button to display all data</h2>
+            <h2 class="fs-3 text-center text-danger">Video 35-6 Dynamic API Data Load and search on keyboard enter button</h2>
+            <h2 class="fs-3 text-center text-info">Video 35-7 Show Phone Details data on a Modal</h2>
+            <h2 class="fs-3 text-center text-success">Video 35-8 Common API related mistakes and asynchronous Javascript</h2>
+            <h2 class="fs-3 text-center text-danger">Video 35-9 Module Summary and recap</h2>
+        </section>
+        <section>
+            <h1 class="fs-3 text-center fw-bold">Welcome to My Phone Hunter</h1>
+        <section class="container">
+            <div>
+                <div class="mb-3 w-50">
+                    
+                    <input id="search-field"type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Your Phone">
+                    <button id="btn-search" class="btn btn-success">Search</button>
+                  </div>
+            </div>
+        
+                <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
+                   
+                    
+                </div>
+                <div id="no-found-message" class="mt-4 d-none">
+                    <h3 class="text-warning">No Phone Found. Please try a new search</h3>
+                </div>
+                <div id="show-all" class="text-center d-none">
+                    <button id="btn-show-all" class="btn btn-primary">Show All</button>
+                </div>
+                <!-- loader -->
+                <div id="loader" class="d-none">
+                    <div style="height: 400px;" class="d-flex justify-content-center text-center align-items-center">
+                        <div class="spinner-border text-success" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </div>
+                </div>
+            
+        </section>
+        </section>
+        <section>
+            <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="phoneDetail2" tabindex="-1" aria-labelledby="phoneDetaiLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="phoneDetailLabel2"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="phone-details" class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section><br>
+        <section>
+          <h1 class="text-center fs-2 text-success bg-black">QUIZ</h1>
+          <h2 class="text-center fs-3 text-primary">Q1: Objects can contain objects as property values. True or false?<br>
+          Ans: true</h2>
+          <h2 class="text-center fs-3 text-danger">Q2: how we can get 2nd element from person array using Slice()?
+
+            const person = [
+             {
+              name: "rahim",
+              age: 22,
+              friends: ["rahim,karim,jabbar"],
+             },
+             {
+              name: "rahim2",
+              age: 22,
+              friends: ["rahim,karim,jabbar"],
+             },
+             {
+             name: "rahim3",
+             age: 22,
+             friends: ["rahim,karim,jabbar"],
+            },
+            ];<br>
+          Ans: person.slice(1,2)</h2>
+          <h2 class="text-center fs-3 text-primary">Q3: Why we use fetch()?<br>
+            Ans: Call the API and get the data</h2>
+          <h2 class="text-center fs-3 text-primary">Q4: why we use res.json()?<br>
+            Ans: Convert to json</h2>
+          <h2 class="text-center fs-3 text-success">Q5: how to get sokina instagram from dreamGirl?
+
+            const dreamGirl = [
+             {
+              sokina: {
+               name: "bbu",
+               height: "5.4",
+               family: [{ father: "rock", mother: "shila", sister: "chinki" }],
+               age: undefined,
+               contactInfo: [
+                {
+                 facebook: {
+                  link: "https://www.facebook.com/",
+                  followers: "12545",
+                  status: "single",
+                  friendsList: [{ name: "rofik" }, undefined],
+                 },
+                },
+                { instagram: "https://www.instagram.com/" },
+               ],
+              },
+             },
+            ];<br>
+            Ans: dreamGirl[0].sokina.contactinfo[1].instagram</h2>
+            <h2 class="text-center fs-3 text-primary">Q6: Among the following, Which one is a ternary operator ?<br>
+              Ans: ? </h2>
+            <h2 class="text-center fs-3 text-primary">Q7:  Do functions in JavaScript necessarily return a value ?<br>
+              Ans: few function return values by dafault. </h2>
+            <h2 class="text-center fs-3 text-primary">Q8:  is javascript single threaded language ?<br>
+              Ans: JavaScript is a single-threaded language </h2>
+            <h2 class="text-center fs-3 text-primary">Q9:  is javascript single threaded language ?<br>
+              Ans: JavaScript is a single-threaded language </h2>
+            <h2 class="text-center fs-3 text-primary">Q10:  can you get the phone which price not 500 ? which one is correct?
+
+              const phones = [
+               { name: "sony", price: 500 },
+               { name: "apple", price: 700 },
+               { name: "sony", price: 700 },
+              ];<br>
+              Ans: phones.filter(phone) => phone.price!=500) </h2>
+        </section>
+        <h1 class="text-center fs-2 text-success bg-black">THE END</h1>
+
+    </main>
+
+    <script src="js/mod35.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
