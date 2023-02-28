@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-06: Module-36</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-slate-900 md:w-full">
+        <nav class="flex justify-between items-center bg-black text-white">
+            <div class="flex bg-emerald-100 rounded-3xl ml-5">
+            <img class="w-10 rounded-full" src="images/nizam.png">
+            <div>
+            <h1 class="md:text-3xl font-bold text-yellow-900">MILSTONE<span class="text-pink-900 md:tex-7xl">-06</span></h1>
+            <h1 class="md:text-3xl font-bold text-pink-900">MODULE<span class="text-indigo-900 md:tex-7xl">-36</span></h1>
+        </div>
+        </div>
+            <ul class="md:flex md:mr-20 font-bold">
+                <li class="pr-5 hover:text-pink-900"><a href="index.html">Home</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod31.html">Module-31</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod32.html">Module-32</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod33.html">Module-33</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod34.html">Module-34</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod35.html">Module-35</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="mod37.html">Module-37</a></li>
+            </ul>
+        </nav>
+        <div class="flex justify-around items-center">
+            <div class="text-right rounded-pill p-10">
+                <h1 class="md:text-7xl text-rose-700">Assalamualaikum!</h1>
+                <h1 class="md:text-7xl text-yellow-300">I am Nizam</h1>
+                <h1 class="md:text-3xl text-info">Student of Batch 07</h1>
+                <button class="btn btn-outline btn-success mt-5">Contact Me</button>
+            </div>
+            <div>
+                <img class="rounded-full" src="images/nizam.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="mx-20">
+        <h1 class="text-7xl text-center text-yellow-300 bg-purple-900">Module 36 Practice</h1><br>
+        <section>
+            <h2 class="text-3xl text-blue-900 text-center">Video 36-1 Module introduction Different way to Create Object</h2>
+            <h2 class="text-3xl text-green-900 text-center">Video 36-2 Object method access and set property values </h2>
+            <h2 class="text-3xl text-rose-900 text-center">Video 36-3 Keys, values, entries, delete, seal, freeze </h2>
+            <h2 class="text-3xl text-indego-900 text-center">Video 36-4 Loop through an object using for in, for of, object entries</h2>
+            <h2 class="text-3xl text-blue-900 text-center">Video 36-5 (advanced) Compare objects, referential integrity</h2>
+            <h2 class="text-3xl text-red-900 text-center">Video 36-6 (optional) Borrow method from object and use it on another object</h2>
+            <h2 class="text-3xl text-blue-900 text-center">Video 36-7 (super advanced) Understand this keyword in JavaScript</h2>
+        <button onclick ="clickHandler()" class="btn btn-primary">Click Me</button>
+        <button id ="btn-click2" class="btn btn-primary">Click2 button</button>
+        <h2 class="text-3xl text-rose-900 text-center">Video 36-8 Module summary and checklist</h2>
+        <p>Way to create object: 1. Object literal syntax, 2. Object constructor, 3. Constructor Function, 4. Es6 classes & 5. Object.create()</p>
+
+        </section>
+        <section>
+            <h1 class="text-center text-7xl text-indigo-900 bg-yellow-500">QUIZ</h1>
+        <div class="text-2xl ml-5">
+            <h2>Q1: Which one is not a way to create an object?<br>
+            Ans: Using JSON.stringify()</h2>
+            <h2>Q2: Call methods accepts _____<br>
+            Ans: this value and and parameters separated by comma</h2>
+            <h2>Q3:What are the purposes of Object.seal()? (google it and read carefully)<br>
+            Ans: Preventing new properties from being added.</h2>
+            <h2>Q4:const nayok = {name: ‘hero’, age:’28’, isMarried: false};<br>
+                How will you obtain the key-value pair from the nayok object?<br>
+            Ans: Object.entries(nayok)</h2>
+            <h2>Q5:Why do we use the bind method?<br>
+            Ans: To borrow method from another object</h2>
+            <h2>Q6:How will you loop through all the properties of an object?<br>
+            Ans: Using for..in loop</h2>
+            <h2>Q7:const obj ={a:1, b:7, c:3, length:2};
+                console.log(Object.keys(obj).length);
+                What will be the output?(Try it out.)<br>
+            Ans: 4</h2>
+            <h2>Q8:const obj1= {module: 35, video:2}; 
+                const obj2= {module: 35, video:2};
+                console.log(obj1 === obj2);<br>
+            Ans: false</h2>
+            <h2>Q9:What would be the output of?:
+
+                const getGirlFriend= (name = "chokina")=>"name"; console.log(getGirlFriend());<br>
+            Ans: name</h2>
+            <h2>Q10: What is a window in JavaScript? Google and read carefully.<br>
+            Ans: A global variable, window, representing the window in which the script is running</h2>
+        </div>
+        </section>
+    </main>
+<script src="js/mod36.js"></script>
+</body>
+</html>    
