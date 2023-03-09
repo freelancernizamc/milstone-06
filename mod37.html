@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-06: Module-37</title>
+    <style>
+        header{
+            background-color: black;
+        }
+        nav{
+            width: 100%;
+            max-width: 95%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: bisque;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            
+        }
+        nav ul li, .footer li{
+            margin-right: 20px;
+            list-style-type: none;
+        }
+        nav ul li a, .footer li a{
+            text-decoration: none;
+            color:bisque;
+            font-weight: bold;
+        }
+        nav ul li a:hover, .footer li a:hover{
+            color: aqua;
+        }
+        nav h1{
+            font-size: 40px;
+            font-weight: bold;
+            color: aqua;
+        }
+        nav span{
+            color:crimson;
+        }
+        .banner{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: bisque;
+        }
+        .banner img{
+            border-radius: 50%;
+        }
+        .banner h1, .footer h1{
+            font-size: 40px;
+            font-weight: bold;
+            color:aqua;
+        }
+        marquee{
+            font-size: 30px;
+            font-weight: bold;
+            background-color: darkblue;
+            color: crimson;
+        }
+        .video{
+            font-size: 30px;
+            color: darkgreen;
+            text-align: center;
+        }
+        .video1{
+            font-size: 30px;
+            color: darkblue;
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: bisque;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .footer img{
+            width: 50%;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Milstone-06<br><span>Module-37</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="mod31.html">Module-31</a></li> 
+                <li><a href="mod32.html">Module-32</a></li> 
+                <li><a href="mod33.html">Module-33</a></li> 
+                <li><a href="mod34.html">Module-34</a></li> 
+                <li><a href="mod35.html">Module-35</a></li> 
+                <li><a href="mod36.html">Module-36</a></li> 
+            </ul>
+        </nav>
+        <div class="banner">
+            <div>
+                <img src="images/nizam.png">
+            </div>
+            <div>
+                <h1>Assalamualaikum!</h1>
+                <h2>I am Nizam</h2>
+                <h3>Welcome to Milstone-06 Module-37 Practice Section</h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <marquee>Assalamualaikum! Welcome to Milstone 06, Module-37 Practice Section, I am Nizam Student of Batch 07</marquee>
+    <br>
+    <section>
+        <h2 class="video">Video 37-1 Module Overview, Primitive and non-primitive data type</h2>
+        <h2 class="video1">Video 37-2 Null Vs Undefined, different ways you will get undefined</h2>
+        <h2 class="video">Video 37-3 Different Truthy and Falsy values in JavaScript</h2>
+        <h2 class="video1">Video 37-4 double equal (==) vs triple equal (===), implicit conversion</h2>
+        <h2 class="video">Video 37-5 Block scope global scope simple understanding of Hoisting</h2>
+        <h2 class="video1">Video 37-6 (advanced) Closure, encapsulation, private variable</h2>
+        <h2 class="video1">Video 37-7 (optional) Callback function and pass different functions</h2>
+        <h2 class="video1">Video 37-8 (advanced) function arguments pass by reference pass by value</h2>
+        <h2 class="video">Video 37-9 Module summary and Practice Problems </h2>
+    </section><br>
+    <section>
+        <h1 style="text-align: center;color:aqua;background-color: black; font-size: 40px; font-weight: bold;">QUIZ</h1>
+        <h2 class="video">Q1: Which value is Falsy?<br>
+        Ans: undefined</h2>
+        <h2 class="video1">Q2: What is "closure"? (google: what is closure in javascript)<br>
+        Ans: Access to an outer function's scope from an inner function AND function bundled together(enclosed) with references to its surrounding state</h2>
+        <h2 class="video">Q3: what would be the output?
+
+            let p='Javascript'; 
+            let q=p; 
+            p='React'; 
+            console.log(q); <br>
+        Ans: JavaScript</h2>
+        <h2 class="video1">Q4: What will be the output (be careful. And think about it)? 
+
+            const isTrue='false'; 
+            if(!isTrue){
+            console.log('hello');
+            } else {
+            console.log('world'); 
+            } <br>
+        Ans: world</h2>
+        <h2 class="video">Q5: Which one will check whether the value and the type are the same for strict equality comparison? <br>
+        Ans: ===  </h2>
+        <h2 class="video1">Q6: What will be the value of the result? 
+
+            function sum(p, q) {
+             p + q;
+            }
+            const result = sum(2, 3);
+            console.log(result);<br>
+        Ans: undefined </h2>
+        <h2 class="video">Q7: When will you get undefined?<br>
+        Ans: All of the above </h2>
+        <h2 class="video1">Q8: What would be the output from the code below?
+
+            if ("2" === 2) {
+             console.log("Inside if");
+            } else {
+             console.log("Inside else");
+            }<br>
+        Ans: Inside else </h2>
+        <h2 class="video">Q9: What would be the output from the function below? 
+
+            function work(x, y = 4) {
+             return x + y;
+            }
+            console.log(work(32);<br>
+        Ans: Syntax error: </h2>
+        <h2 class="video1">Q10: Can you access the let variable outside of the block scope?<br>
+        Ans: No </h2>
+    </section>
+    <h1 style="text-align: center;color:aqua;background-color: black; font-size: 40px; font-weight: bold;">THE END</h1>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="part1">
+            <img src="images/nizam.png">
+            <h1>Md Nizam Uddin</h1>
+            <h2>Email:nizam_qu@yahoo.com</h2>
+        </div>
+        <div class="part2">
+            <h1>My Projects</h1>
+            <li><a href="#">Digital Agency</a></li>
+            <li><a href="#">Digital Agency</a></li>
+            <li><a href="#">Digital Agency</a></li>
+            <li><a href="#">Digital Agency</a></li>
+            <li><a href="#">Digital Agency</a></li>
+            <li><a href="#">Digital Agency</a></li>
+        </div>
+        <div class="part3">
+            <h1>Milstone</h1>
+            <li><a href="#">Milstone-01</a></li>
+            <li><a href="#">Milstone-02</a></li>
+            <li><a href="#">Milstone-03</a></li>
+            <li><a href="#">Milstone-04</a></li>
+            <li><a href="#">Milstone-05</a></li>
+            <li><a href="#">Milstone-06</a></li>
+        </div>
+    </div>
+    <h6 style="text-align: center;">Copyright &copy;2023 Allright Reserved</h6>
+    </footer>
+    
+</body>
+</html>

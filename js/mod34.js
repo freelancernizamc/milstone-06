@@ -39,15 +39,35 @@ const loadUser = () =>{
     .then(data => displayUser(data))
 }
 
-const displayUser = user =>{
-    const genderTag = document.getElementById('gender')
-    const locationTag = document.getElementById('location')
+// const displayUser = user =>{
+//     const genderTag = document.getElementById('gender')
+//     const locationTag = document.getElementById('location')
+//     genderTag.innerHTML = user.results[0].gender;
+//     locationTag.innerHTML = user.results[0].location;
+    
+//     const name = user.results[0].name.first + ' ' + user.results[0].name.last;
+    
+//     document.getElementById('name').innerHTML = name;
+//     console.log(user.results[0].name);
+// }
+
+// loadUser();
+
+const displayUser = (user) => {
+    const genderTag = document.getElementById('gender');
+    const locationTag = document.getElementById('location');
+    const imageTag = document.getElementById('user-image');
+    const phoneTag = document.getElementById('phone');
+  
     genderTag.innerHTML = user.results[0].gender;
-    locationTag.innerHTML = user.results[0].location;
+    locationTag.innerHTML = user.results[0].location.city + ', ' + user.results[0].location.country;
+    phoneTag.innerHTML = user.results[0].phone;
+    imageTag.innerHTML = `<img src="${user.results[0].picture.large}"/>`
+    console.log(user);
+    
+    
     const name = user.results[0].name.first + ' ' + user.results[0].name.last;
     document.getElementById('name').innerHTML = name;
     console.log(user.results[0].name);
-}
-
-loadUser();
-
+  }
+loadUser();  
